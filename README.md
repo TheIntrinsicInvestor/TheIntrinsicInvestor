@@ -4,6 +4,9 @@ I'm studying Accounting and Finance at LSE, but most of my spare time goes into 
 
 ### Things I've built
 
+**[NorthStar](https://github.com/TheIntrinsicInvestor/Nebius-x-Noetic-Hackathon)** ([live demo](https://northstar-lovat-eight.vercel.app))<br>
+Covenant early warning for mid-sized companies, built in a day with a teammate at the Noetic x Nebius hackathon. Firms with $10m to $500m of revenue carry real bank debt but rarely have a treasury team, so they often find out about a covenant breach after the quarter has closed. You upload the loan agreement and management accounts, and it reads the covenants, maps the accounts, projects six quarters and shows how close each covenant gets to its limit, with sliders and plain-English what-if questions. The one rule: the language model never produces a number on screen. Open-weight models on Nebius do the reading and a deterministic Python engine does the maths. Replaying Nortech Systems from its SEC filings, it forecast a breach while leverage still showed 30% headroom, and the company breached at its next test.
+
 **[Timbre Care](https://github.com/TheIntrinsicInvestor/timbre-care)** ([live demo](https://timbre-care.edgeone.dev))<br>
 An AI care agent for older people who live alone, built with a teammate for Tencent Cloud's Age Well hackathon. It writes up doctor's appointments in plain language as they happen and makes a short check-in call each day. Under the hood it's an MCP server with 17 tools and two agent skills, and the guardrails are enforced in those tools rather than in the prompt. If the agent tries to downgrade something urgent, the tool refuses and tells it which rule it broke.
 
@@ -29,7 +32,7 @@ I've also made a live F1 timing screen. If I keep wishing something existed, I u
 
 ### Hackathons
 
-So far: Tencent Cloud's Age Well challenge, NEBULA X and FaithTech BUILD. I like having a weekend and a real problem to work on, and I'm keen to do more in London, especially anything with AI agents or something people will use once the weekend's over.
+So far: Tencent Cloud's Age Well challenge, NEBULA X, FaithTech BUILD and Noetic x Nebius. I like having a weekend and a real problem to work on, and I'm keen to do more in London, especially anything with AI agents or something people will use once the weekend's over.
 
 ### Finance
 
