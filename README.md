@@ -10,6 +10,9 @@ Covenant early warning for mid-sized companies, built in a day with a teammate. 
 **[Timbre Care](https://github.com/TheIntrinsicInvestor/timbre-care)** | Tencent Cloud Hackathon ([live demo](https://timbre-care.edgeone.dev))<br>
 An AI care agent for older people who live alone, built with a teammate. It writes up doctor's appointments in plain language as they happen and makes a short check-in call each day. Under the hood it's an MCP server with 17 tools and two agent skills, and the guardrails are enforced in those tools rather than in the prompt. If the agent tries to downgrade something urgent, the tool refuses and tells it which rule it broke.
 
+**[Downwind](https://github.com/TheIntrinsicInvestor/downwind)** | AI for Climate Hackathon at COP31 ([live demo](https://downwind-sigma.vercel.app))<br>
+Indonesia's peat fires send smoke over whole cities, but the official rule for sorting them only puts them in tiers: on one September day, 349 fires in West Kalimantan were all "Priority 1", with no order between them. With two teammates I built Downwind, which ranks those fires by how many people their smoke will reach in the next 48 hours. It moves simulated smoke on the morning's wind forecast over a population map, a gradient-boosting model trained on three past fire seasons estimates which fires satellites will see again tomorrow, and language models write a morning bulletin whose every number is checked against the data. A GitHub Actions job refreshes it daily from NASA's live fire feed. Tested a day ahead on the 2026 season, its smoke tracked poor visibility at five airports better than simply counting nearby fires (0.59 against 0.45).
+
 **[Futures Forecasting Models](https://github.com/TheIntrinsicInvestor/everesteer-hackathon)** | Everesteer Hedge Fund Hackathon<br>
 A live prediction tournament at LSE: predict forward returns on futures baskets, then stake money on your own models over four 20-minute rounds, each scored against a sealed answer key. One of my models ranked 2nd of 521 in round 2, with six in that round's top 14, after an earlier 2nd of 174 on the practice board. Mid-event I built a forward test that checks every idea on four separate time blocks, which showed that training on the last quarter of history beat the shorter window I'd started with, and the live rounds agreed.
 
@@ -26,16 +29,16 @@ An LLM pipeline that writes sell-side style research reports from institutional 
 Pick a distance and a start point and it plans a proper loop: you finish where you started without retracing the same streets. Routes come from a GraphHopper server I host myself, covering Singapore and the San Francisco Bay Area, and it can rank them by total climb if you'd rather avoid hills. During a run, a Live Activity keeps distance, time and pace on the lock screen. Built in React Native with Expo, with a FastAPI route service behind it.
 
 **[Remix Web](https://github.com/TheIntrinsicInvestor/remix-web)** (web and iOS app, personal project)<br>
-Turns a song into a backing track for covers. Give it a YouTube or Spotify link or upload a file, and it splits the song into stems with Demucs, then pitch-shifts, time-stretches and adds effects. Underneath is a Python toolkit I drive by describing the sound I want to Claude, which writes the recipe and runs it. FastAPI backend on my server, Next.js frontend.
+Turns a song into a backing track for covers: stems split with Demucs, then pitch, tempo and effects from recipes Claude writes for me. FastAPI backend on my server, Next.js frontend.
 
 **[Telegram Expense Tracker](https://github.com/TheIntrinsicInvestor/telegram-expense-tracker)**<br>
-A budgeting bot I run for myself and a few friends. You text it something like `15 lunch` and it logs it, and if it guesses the category wrong it remembers your fix. Reports compare your spending with what you'd usually have spent by that day of the month, so paying rent on the 1st doesn't make every month look like a disaster.
+A budgeting bot I run for a few friends: text it `15 lunch` and it logs it, remembers your category fixes, and compares spending with your usual pace for that day of the month.
 
 I've also made a live F1 timing screen. If I keep wishing something existed, I usually end up building it, and most of these run on a small server I look after.
 
 ### Hackathons
 
-So far: Tencent Cloud's Age Well challenge, NEBULA X, FaithTech BUILD, Noetic x Nebius and Everesteer's hedge fund hackathon at LSE. I like having a weekend and a real problem to work on, and I'm keen to do more in London, especially anything with AI agents or something people will use once the weekend's over.
+So far: AI for Climate at COP31, Tencent Cloud's Age Well challenge, NEBULA X, FaithTech BUILD, Noetic x Nebius and Everesteer's hedge fund hackathon at LSE. I like having a weekend and a real problem to work on, and I'm keen to do more in London, especially anything with AI agents or something people will use once the weekend's over.
 
 ### Finance
 
